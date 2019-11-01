@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/BladimirOrellana/book-finder/static/css/main.b100e6da.chunk.css",
+    "main.js": "/BladimirOrellana/book-finder/static/js/main.dc7854c6.chunk.js",
+    "main.js.map": "/BladimirOrellana/book-finder/static/js/main.dc7854c6.chunk.js.map",
+    "runtime-main.js": "/BladimirOrellana/book-finder/static/js/runtime-main.c717ebad.js",
+    "runtime-main.js.map": "/BladimirOrellana/book-finder/static/js/runtime-main.c717ebad.js.map",
+    "static/js/2.34f9fee5.chunk.js": "/BladimirOrellana/book-finder/static/js/2.34f9fee5.chunk.js",
+    "static/js/2.34f9fee5.chunk.js.map": "/BladimirOrellana/book-finder/static/js/2.34f9fee5.chunk.js.map",
+    "index.html": "/BladimirOrellana/book-finder/index.html",
+    "precache-manifest.b12fc468ca73ca84611939a9a3d323da.js": "/BladimirOrellana/book-finder/precache-manifest.b12fc468ca73ca84611939a9a3d323da.js",
+    "service-worker.js": "/BladimirOrellana/book-finder/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/BladimirOrellana/book-finder/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/BladimirOrellana/book-finder/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c717ebad.js",
+    "static/js/2.34f9fee5.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.dc7854c6.chunk.js"
+  ]
+}
