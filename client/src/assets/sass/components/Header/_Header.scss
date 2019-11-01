@@ -1,0 +1,20 @@
+.header-full{
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+), url('./../img/book-cover.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+
+}
+
+.header-content{
+text-align: center;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -30%);
+}
