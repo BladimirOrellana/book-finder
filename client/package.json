@@ -2,8 +2,7 @@
   "name": "book-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/BladimirOrellana/book-finder/",
-  "proxy": "http://localhost:3001/",
+   "proxy": "http://localhost:3001/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.11.0",
