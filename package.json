@@ -2,7 +2,10 @@
   "name": "book-finder",
   "version": "1.0.1",
   "description": "Book searching app",
-  "main": "server.js",
+  "engines": {
+    "node": "12.10.0"
+  },
+   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev ",
     "start:prod": "node server.js",
