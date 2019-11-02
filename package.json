@@ -2,7 +2,10 @@
   "name": "book-finder",
   "version": "1.0.1",
   "description": "Book searching app",
-  "main": "server.js",
+  "engines": {
+    "node": "12.10.0"
+  },
+   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev ",
     "start:prod": "node server.js",
@@ -16,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BladimirOrellana/book-finder.git"
+    "url": "git+https://github.com/BladimirOrellana/book-finder-23.git"
   },
   "author": "Bladimir",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BladimirOrellana/book-finder/issues"
+    "url": "https://github.com/BladimirOrellana/book-finder-23/issues"
   },
-  "homepage": "https://github.com/BladimirOrellana/book-finder#readme",
+  "homepage": "https://github.com/BladimirOrellana/book-finder-23#readme",
   "dependencies": {
     "concurrently": "^5.0.0",
     "dotenv": "^8.2.0",
