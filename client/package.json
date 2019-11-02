@@ -1,9 +1,6 @@
 {
   "name": "book-finder",
   "version": "0.1.1",
-  "engines": {
-    "node": "12.10.0"
-  },
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
