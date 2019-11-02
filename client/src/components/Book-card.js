@@ -1,10 +1,15 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import  mongosse from 'mongoose';
-import db from './../models';
+import api from './../Api/localApi';
+
+
 
 const BookCard = props => {
-
+  
+  api.localBooks().then((result) => {
+    console.log("Local CARD",result)
+  })
     let book = {
         title: props.book.title,
         link: props.book.amazon_product_url,
@@ -18,12 +23,11 @@ const BookCard = props => {
     //         console.log("Fail")
     //     }
     // })
-console.log("DB ", db.Saved)
-  return (
-    <div className="col-sm-12 col-md-6 col-lg-4">
+return (
+    <div className="col-sm-12 col-md-6 col-lg-2">
       <div className="book-card">
       <div className="book-card-side book-card-side-front">
-      <div class="card bg-dark text-white">
+      <div className="card bg-dark text-white">
   <img src={props.book.book_image} class="card-img" alt="..."></img>
  </div>
       </div>

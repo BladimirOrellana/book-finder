@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import API from "./../Api/Search-book-api/Search-book-api";
+import localApi from './../Api/localApi';
 import BookCard from "./Book-card";
 class Book extends Component {
   state = {
@@ -7,9 +8,13 @@ class Book extends Component {
   };
   componentDidMount() {
     this.getData();
+   
   }
 
   getData = () => {
+    localApi.localBooks().then((result) => {
+      console.log("Local is in the component books.js  ",result)
+    })
     API.getBooks()
       .then(response => {
         const booksData = response.data.results.books;

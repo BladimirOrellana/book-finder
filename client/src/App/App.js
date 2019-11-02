@@ -1,10 +1,11 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Nav from './Nav';
+import Nav from '../components/Nav';
 
-import Home from './../Routes/Home';
-import Save from './../Routes/Save';
-import NotFound from './../Routes/Not-found';
+import Home from './../Pages/Home';
+import Save from './../Pages/Save';
+import Footer from './../components/Footer';
+import NotFound from './../Pages/Not-found';
 const App = () =>{
     return (
         <div>
@@ -16,6 +17,7 @@ const App = () =>{
         <Route path='/' exact component={Home} />
         <Route component={NotFound} />
         </Switch>
+        <Footer />
 
         </BrowserRouter>
        
