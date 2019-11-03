@@ -9,7 +9,8 @@ class Nav extends Component {
     return (
       <div id="navbar" className="navbar-transparent">
         <Link className="nav-link" to='/'>Home</Link>
-        <Link className='nav-link' to='/save'>Save</Link>
+        <Link id="saved" className='nav-link' to='/save'>Save</Link>
+        
       </div>
 
     );

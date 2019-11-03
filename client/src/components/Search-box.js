@@ -25,7 +25,7 @@ class SearchBox extends Component {
     let searchTerm = this.state.term
   API.searchBook(searchTerm).then((result) =>{
   this.setState({
-    searchTerm: result.data.results
+    searchTerm: result.data.items
   })
     
   })
@@ -33,15 +33,15 @@ class SearchBox extends Component {
   }
 
   render() {
-    console.log(this.state.term)
-console.log(this.state.searchTerm)
-if(this.state.searchTerm.length === 0){
-  
+   
+console.log("BOX ",this.state.searchTerm)
+
+
   return (
     <div className="search-box">
       <form
        
-        className="form-inline my-2 my-lg-0 "
+        className=""
       >
         <input
           value={this.state.term}
@@ -53,39 +53,10 @@ if(this.state.searchTerm.length === 0){
           aria-label="Search"
         ></input>
         <button
-        disabled={!(this.state.searchTerm)}
-         onClick={this.searcOnSubmit}
-          className="btn btn-outline-success my-2 my-sm-0"
-          type="submit"
-        >
-          Search
-        </button>
-
-      </form>
-  zzzz
-    </div>
-  );
-}else{
-
-  return (
-    <div className="search-box">
-      <form
-       
-        className="form-inline my-2 my-lg-0 "
-      >
-        <input
-          value={this.state.term}
-          onChange={this.searchOnChange}
-          name="term"
-          className="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        ></input>
-        <button
+        id="submitButton"
         disabled={!(this.state.term)}
          onClick={this.searcOnSubmit}
-          className="btn btn-outline-success my-2 my-sm-0"
+          className="btn btn-outline-success"
           type="submit"
         >
           Search
@@ -98,5 +69,5 @@ if(this.state.searchTerm.length === 0){
 
   
   }
-}
+
 export default SearchBox;
