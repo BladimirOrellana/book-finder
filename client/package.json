@@ -18,11 +18,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "sass": "node-sass src/assets/sass/main.scss src/assets/css/index.css -w",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "sass": "node-sass src/assets/sass/main.scss src/assets/css/index.css -w",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
