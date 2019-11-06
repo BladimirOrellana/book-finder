@@ -22,7 +22,7 @@ class Nav extends Component {
     };
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop + 700;
-    console.log(sticky)
+    
 
     function myFunction() {
       if (window.pageYOffset >= sticky) {

@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import SearchBox from './Search-box';
-import Nav from './Nav';
 class  Header extends Component{
   
   render(){

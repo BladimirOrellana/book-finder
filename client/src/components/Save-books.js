@@ -34,7 +34,7 @@ class SavedBooks extends Component {
   };
 
   render() {
-    console.log("Estae", this.state.bookData.Items);
+    console.log("state", this.state.bookData.Items);
     if (this.state.bookData.Items === 0) {
       document.getElementById("footer").style.display = "none";
 
