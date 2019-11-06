@@ -37,8 +37,8 @@ let books = this.props.result.map((book) =>{
     <img data-id={book.id} src={book.volumeInfo.imageLinks.thumbnail} class="card-img home-card-img" alt="..."></img>
     <h5 class="card-title">{book.volumeInfo.title}</h5>
       <p class="card-text">{book.volumeInfo.authors}</p>
-      <a href={book.volumeInfo.infoLink}>Visit</a>
-      <a onClick={() =>this.saveBook(bookObject)} data-id={book.id}>Save</a>
+      <a className="visit-botton"  href={book.volumeInfo.infoLink}>Visit</a>
+      <a className="saved-botton" onClick={() =>this.saveBook(bookObject)} data-id={book.id}>Save</a>
     </div>
   </div>
    

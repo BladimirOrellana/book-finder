@@ -61,6 +61,13 @@ body {
 .saved-page-header {
   margin-top: 20px; }
 
+.fa-trash-alt {
+  color: brown; }
+  .fa-trash-alt:hover {
+    color: red; }
+  .fa-trash-alt:active {
+    font-size: 15px; }
+
 .book-media {
   margin-top: 10px;
   border: 1px solid gray;
@@ -86,6 +93,27 @@ body {
   overflow: scroll;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.visit-botton {
+  color: white;
+  background: blue;
+  margin: 5px;
+  text-decoration: none;
+  margin: 5px auto;
+  width: 60%; }
+  .visit-botton:hover {
+    background: black; }
+
+.saved-botton {
+  color: black;
+  background: yellowgreen;
+  margin: 5px auto;
+  width: 60%; }
+  .saved-botton:hover {
+    background: green; }
+  .saved-botton:active {
+    background: yellowgreen;
+    font-size: 15px; }
 
 .book-card {
   perspective: 1500px;

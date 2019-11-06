@@ -22,7 +22,7 @@ return (
   <div className="card-body">
     <h5 className="card-title">{props.book.title}</h5>
    <p>{props.book.description}</p>
-    <Link target="_blank" to={props.book.amazon_product_url}  className="btn btn-primary">Read More</Link>
+    <a target="_blank" href={props.book.amazon_product_url}  className="btn btn-primary">Read More</a>
    
    
   </div>

@@ -24,7 +24,9 @@ class SavedBooks extends Component {
     API.deleteSavedBook(id).then(result => {
       console.log(result);
       if (result.data === 1) {
-        console.log(result);
+      this.setState({
+        bookData: this.state.bookData
+      })
       }
     });
   };

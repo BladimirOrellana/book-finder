@@ -13,3 +13,32 @@ overflow: scroll;
 margin-top: 10px;
 margin-bottom: 10px;
 }
+.visit-botton{
+    color: white;
+    background: blue;
+    margin: 5px;
+    text-decoration: none;
+    margin: 5px auto;
+    width: 60%;
+    &:hover{
+        background: black;
+            }
+
+  
+}
+.saved-botton{
+    color: black;
+    background: yellowgreen;
+    margin: 5px auto;
+  width: 60%;
+
+    &:hover{
+background: green;
+    }
+
+    &:active{
+        background: yellowgreen;
+       font-size: 15px;
+    }
+
+}
