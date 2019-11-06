@@ -30,16 +30,16 @@ class Book extends Component {
 
     return (
       <div className="container-fluid">
-      <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Books You might like</h1>
+      <div className="jumbotron jumbotron-fluid">
+  <div className="container">
+    <h1 className="display-4">Books You might like</h1>
   </div>
 </div>
       
         <div className="row books-container">{books}</div>
-        <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Checkout our GitHub page</h1>
+        <div className="jumbotron jumbotron-fluid">
+  <div className="container">
+    <h1 className="display-4">Checkout our GitHub page</h1>
    </div>
 </div>
       </div>

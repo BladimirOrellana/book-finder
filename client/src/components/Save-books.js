@@ -27,6 +27,8 @@ class SavedBooks extends Component {
       this.setState({
         bookData: this.state.bookData
       })
+
+
       }
     });
   };
@@ -45,16 +47,16 @@ class SavedBooks extends Component {
     } else {
       let booksSaved = this.state.bookData.map(bookSaved => {
         return (
-          <div>
-            <div class="media book-media">
+          <div key={bookSaved._id}>
+            <div className="media book-media">
               <img
                 src={bookSaved.thumbnail[0].smallThumbnail}
-                class="mr-3"
+                className="mr-3"
                 alt="..."
               ></img>
-              <div class="media-body">
-                <h5 class="mt-0">{bookSaved.title}</h5>
-                <h6 class="mt-0">
+              <div className="media-body">
+                <h5 className="mt-0">{bookSaved.title}</h5>
+                <h6 className="mt-0">
                   <span className="text-muted">By</span> {bookSaved.authors}
                 </h6>
                 <p>{bookSaved.description}</p>
@@ -62,7 +64,7 @@ class SavedBooks extends Component {
               <i
                 onClick={() => this.showMenuOptions(bookSaved._id)}
                 id={bookSaved._id}
-                class="fas fa-trash-alt"
+                className="fas fa-trash-alt"
               ></i>
             </div>
             <Link className="btn btn-success btn-block" to={bookSaved.infoLink}>Visit</Link>
@@ -71,11 +73,11 @@ class SavedBooks extends Component {
       });
       return (
         <div className="container-fluid saved-page-header">
-          <div class="jumbotron">
-            <h1 class="display-4">Welcome</h1>
-            <p class="lead">Here are your saved books</p>
-            <hr class="my-4"></hr>
-            <a class="btn btn-primary btn-lg" href="/" role="button">
+          <div className="jumbotron">
+            <h1 className="display-4">Welcome</h1>
+            <p className="lead">Here are your saved books</p>
+            <hr className="my-4"></hr>
+            <a className="btn btn-primary btn-lg" href="/" role="button">
               Search Another Book
             </a>
           </div>

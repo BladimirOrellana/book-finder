@@ -29,10 +29,10 @@ let books = this.props.result.map((book) =>{
    if(book.volumeInfo.imageLinks){
     return (
       <div className="col-sm-6 col-md-4 col-lg-2">
-     <div class="card bg-dark text-white search-result-card">
+     <div className="card bg-dark text-white search-result-card">
     <img data-id={book.id} src={book.volumeInfo.imageLinks.thumbnail} class="card-img home-card-img" alt="..."></img>
-    <h5 class="card-title">{book.volumeInfo.title}</h5>
-      <p class="card-text">{book.volumeInfo.authors}</p>
+    <h5 className="card-title">{book.volumeInfo.title}</h5>
+      <p className="card-text">{book.volumeInfo.authors}</p>
       <a className="visit-botton"  href={book.volumeInfo.infoLink}>Visit</a>
       <a className="saved-botton" onClick={() =>this.saveBook(bookObject)} data-id={book.id}>Save</a>
     </div>
