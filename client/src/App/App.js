@@ -11,6 +11,7 @@ const App = () =>{
         <div>
         <BrowserRouter>
         <Nav />
+        
         <Switch>
 
         <Route path='/save' exact component={Save} />

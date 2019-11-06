@@ -21,13 +21,18 @@ class Nav extends Component {
       myFunction();
     };
     var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    var sticky = navbar.offsetTop + 700;
+    console.log(sticky)
 
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
+        navbar.style.background = 'black';
+      
+        
       } else {
         navbar.classList.remove("sticky");
+        navbar.style.background = 'black';
       }
     }
   }

@@ -1,9 +1,6 @@
 .navbar-transparent{
 overflow: hidden;
-background-image: linear-gradient(to right bottom,
-rgba(0,0,0,0.5),
-rgba(0,0,0,0.5)
-);
+background: black;
 z-index: 2;
 }
 
@@ -15,6 +12,10 @@ z-index: 2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Open Sans Condensed', sans-serif;
+   
+
+
   }
 .sticky {
     position: fixed;

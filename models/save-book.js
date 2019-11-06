@@ -6,7 +6,9 @@ const saveSchema = new Schema({
     bookId:{type: String},
     title: {type: String},
     authors: {type: Array},
-    infoLink:{type: String}
+    infoLink:{type: String},
+    description:{type: String},
+    thumbnail:{type: Array}
 
 });
 

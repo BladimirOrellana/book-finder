@@ -8,13 +8,9 @@ class SearchResult extends Component{
      console.log(bookObject)
     API.saveBook(bookObject).then((result) =>{
      if(result.data === 1){
-      document.getElementById('saved').innerHTML = '<i class="fas fa-cloud-upload-alt"></i>';
-      document.getElementById('saved').style.color = "yellowgreen";
+    
       
-   setTimeout(() =>{
-    document.getElementById('saved').innerHTML = 'saved';
-    document.getElementById('saved').style.color = "white";
-   },600)
+
      
      }else{
        alert("FAIL")
@@ -28,7 +24,9 @@ let books = this.props.result.map((book) =>{
     bookId: book.id,
     title: book.volumeInfo.title,
     authors: book.volumeInfo.authors,
-    infoLink: book.volumeInfo.infoLink
+    infoLink: book.volumeInfo.infoLink,
+    thumbnail:book.volumeInfo.imageLinks,
+    description:book.volumeInfo.description
 
 
   }
@@ -55,8 +53,7 @@ let books = this.props.result.map((book) =>{
         if(this.props.result.length === 0){
             return (
                 <div className="container-fluid">
-               Please Enter a book name or Author name to search a book
-                  </div>
+              </div>
                 )
         }else{
             return (

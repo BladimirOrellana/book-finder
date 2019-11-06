@@ -12,7 +12,7 @@ body {
 
 .navbar-transparent {
   overflow: hidden;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: black;
   z-index: 2; }
 
 #navbar a {
@@ -22,7 +22,8 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px; }
+  font-size: 17px;
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 .sticky {
   position: fixed;
@@ -44,16 +45,32 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
-  overflow: scroll; }
+  overflow: scroll;
+  font-family: 'Montserrat', sans-serif; }
 
-.save-books-container {
-  padding-top: 50px; }
+.no-saved-books-message {
+  height: 100vh;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../img/saved-page-background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.saved-page-header {
+  margin-top: 20px; }
+
+.book-media {
+  margin-top: 10px;
+  border: 1px solid gray;
+  padding: 10px; }
 
 .search-box {
   text-align: center; }
 
 #submitButton {
-  margin: 20px; }
+  margin-top: 7px; }
 
 .search-result-container {
   overflow: scroll;
@@ -98,6 +115,9 @@ body {
 .home-card-img {
   width: 100%;
   height: 300px; }
+
+.books-container {
+  padding: 20px; }
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../img/book-cover.jpeg");

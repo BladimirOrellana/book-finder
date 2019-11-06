@@ -45,5 +45,22 @@ module.exports = {
         }).catch((err)=>{
             console.log(err)
         })
+    },
+
+    deleteSaved: function(req,res){
+        
+        
+        db.Save.deleteOne({ _id: req.params.id }, function (result) {
+            
+            if(result === null){
+                res.json(1)
+            }else{
+                res.json(0)
+            }
+    
+           
+          }).catch((err)=>{
+            console.log(err)
+        });
     }
 }

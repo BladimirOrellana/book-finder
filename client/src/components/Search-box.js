@@ -49,7 +49,7 @@ console.log("BOX ",this.state.searchTerm)
           name="term"
           className="form-control mr-sm-2"
           type="search"
-          placeholder="Search"
+          placeholder="Search a book"
           aria-label="Search"
         ></input>
         <button

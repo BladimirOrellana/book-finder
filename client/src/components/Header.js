@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import SearchBox from './Search-box';
+import Nav from './Nav';
 class  Header extends Component{
   
   render(){
@@ -7,6 +8,7 @@ class  Header extends Component{
   
   return (
     <div className="jumbotron jumbotron-fluid header-full">
+ 
       <div className="container header-content">
         <h1 className="display-4">Find me a book</h1>
         <p className="lead">
