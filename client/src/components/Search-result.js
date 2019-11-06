@@ -7,11 +7,7 @@ class SearchResult extends Component{
    saveBook(bookObject){
      console.log(bookObject)
     API.saveBook(bookObject).then((result) =>{
-     if(result.data === 1){
-    
-      
-
-     
+     if(result.data === 1){   
      }else{
        alert("FAIL")
      }
