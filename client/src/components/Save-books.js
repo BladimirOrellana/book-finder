@@ -22,11 +22,14 @@ class SavedBooks extends Component {
 
   showMenuOptions = id => {
     API.deleteSavedBook(id).then(result => {
-      console.log(result);
+      console.log("data",this.state.bookData)
+      console.log("deleted",result);
       if (result.data === 1) {
-      this.setState({
-        bookData: this.state.bookData
-      })
+        API.getSavedBook().then(result => {
+          this.setState({
+            bookData: result.data
+          });
+        });
 
 
       }

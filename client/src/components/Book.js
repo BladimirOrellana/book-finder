@@ -8,11 +8,9 @@ class Book extends Component {
   };
   componentDidMount() {
     this.getData();
-   
   }
 
   getData = () => {
-  
     API.getBooks()
       .then(response => {
         const booksData = response.data.results.books;
@@ -30,19 +28,20 @@ class Book extends Component {
 
     return (
       <div className="container-fluid">
-      <div className="jumbotron jumbotron-fluid">
-  <div className="container">
-    <h1 className="display-4">Books You might like</h1>
-  </div>
-</div>
-      
-        <div className="row books-container">{books}</div>
         <div className="jumbotron jumbotron-fluid">
-  <div className="container">
-    <h1 className="display-4">Checkout our GitHub page</h1>
-   </div>
-</div>
+          <div className="container">
+            <h1 className="display-4">Books You might like</h1>
+          </div>
+        </div>
+
+        <div className="row books-container">{books}</div>
+        <a href="https://github.com/BladimirOrellana/book-finder-23">
+        <div className="jumbotron jumbotron-fluid git-hub">
+          <h1 className="display-4">Checkout our GitHub Repo</h1>
+        </div>
+        </a>
       </div>
+      
     );
   }
 }
