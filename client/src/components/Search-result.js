@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
-import API from './../Api/Search-book';
+import API from '../Api/Search-book';
 
 class SearchResult extends Component{
   
